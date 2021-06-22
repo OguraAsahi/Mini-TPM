@@ -20,7 +20,7 @@
     deb-src http://mirrors.hust.edu.cn/ubuntu/ precise-updates main restricted universe multiverse
     deb-src http://mirrors.hust.edu.cn/ubuntu/ precise-proposed main restricted universe multiverse
     deb-src http://mirrors.hust.edu.cn/ubuntu/ precise-backports main restricted universe multiverse
-
+    之后sudo apt-get upgrade
     
 	4、./build.sh
 	
