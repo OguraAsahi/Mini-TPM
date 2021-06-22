@@ -7,7 +7,21 @@
 	2、cd tpm-emulator
 	
 	3、sudo apt-get install libgmp-dev cmake #Ubuntu 10.04 下用：sudo apt-get install libgmp3-dev cmake
-	
+	注意:若出现404,建议换源。
+    命令：sudo vim /etc/apt/sources.list
+    换成以下内容：
+    deb http://mirrors.hust.edu.cn/ubuntu/ precise main restricted universe multiverse
+    deb http://mirrors.hust.edu.cn/ubuntu/ precise-security main restricted universe multiverse
+    deb http://mirrors.hust.edu.cn/ubuntu/ precise-updates main restricted universe multiverse
+    deb http://mirrors.hust.edu.cn/ubuntu/ precise-proposed main restricted universe multiverse
+    deb http://mirrors.hust.edu.cn/ubuntu/ precise-backports main restricted universe multiverse
+    deb-src http://mirrors.hust.edu.cn/ubuntu/ precise main restricted universe multiverse
+    deb-src http://mirrors.hust.edu.cn/ubuntu/ precise-security main restricted universe multiverse
+    deb-src http://mirrors.hust.edu.cn/ubuntu/ precise-updates main restricted universe multiverse
+    deb-src http://mirrors.hust.edu.cn/ubuntu/ precise-proposed main restricted universe multiverse
+    deb-src http://mirrors.hust.edu.cn/ubuntu/ precise-backports main restricted universe multiverse
+
+    
 	4、./build.sh
 	
 	5、cd build
@@ -113,14 +127,3 @@
 	2、运行./RAClient 机器2的ip 机器1的ip （如，./RAClient 192.168.200.1 192.168.200.2）
 
 
-
-deb http://mirrors.hust.edu.cn/ubuntu/ precise main restricted universe multiverse
-deb http://mirrors.hust.edu.cn/ubuntu/ precise-security main restricted universe multiverse
-deb http://mirrors.hust.edu.cn/ubuntu/ precise-updates main restricted universe multiverse
-deb http://mirrors.hust.edu.cn/ubuntu/ precise-proposed main restricted universe multiverse
-deb http://mirrors.hust.edu.cn/ubuntu/ precise-backports main restricted universe multiverse
-deb-src http://mirrors.hust.edu.cn/ubuntu/ precise main restricted universe multiverse
-deb-src http://mirrors.hust.edu.cn/ubuntu/ precise-security main restricted universe multiverse
-deb-src http://mirrors.hust.edu.cn/ubuntu/ precise-updates main restricted universe multiverse
-deb-src http://mirrors.hust.edu.cn/ubuntu/ precise-proposed main restricted universe multiverse
-deb-src http://mirrors.hust.edu.cn/ubuntu/ precise-backports main restricted universe multiverse
